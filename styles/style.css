@@ -146,7 +146,6 @@ button:disabled {
   color: var(--accent-text-color);
   font-weight: 700;
   line-height: 130%; /* 23.4px */
-  /*font-size: inherit;*/
 }
 
 .content {
