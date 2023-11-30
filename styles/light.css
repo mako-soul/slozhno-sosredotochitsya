@@ -5,7 +5,6 @@
 */
 
 .page.theme_light {
-  --main-font-family: IBM Plex mono, monospace;
   --text-size: 18px;
   --text-color: #353430;
   --title-color: #ffc2e6;
@@ -24,7 +23,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-font-family: IBM Plex mono, monospace;
     --text-size: 18px;
     --text-color: #353430;
     --title-color: #ffc2e6;

@@ -36,6 +36,7 @@ button:disabled {
   background-attachment: fixed;
   font-family: var(--main-font-family, monospace);
   font-size: var(--text-size);
+  font-style: normal;
   color: var(--text-color, #F1B2CE);
 }
 
@@ -136,15 +137,17 @@ button:disabled {
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 82.5%; /* 95.7px */
-  font-style: normal;
   font-weight: 700;
+}
+
+.description {
+  color: var(--accent-text-color);
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
 }
 
 .title-decor {
   background-color: var(--accent-color);
-  color: var(--accent-text-color);
-  font-weight: 700;
-  line-height: 130%; /* 23.4px */
 }
 
 .content {
@@ -180,6 +183,9 @@ button:disabled {
 
 .card_title {
   font-size: inherit;
+  color: var(--accent-text-color);
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
 }
 
 .card_text {
@@ -189,6 +195,9 @@ button:disabled {
 .card_subtitle {
   font-weight: 400;
   font-size: inherit;
+  color: var(--accent-text-color);
+  /*font-weight: 700;*/
+  line-height: 130%; /* 23.4px */
 }
 
 .card_link {
@@ -239,13 +248,21 @@ button:disabled {
 }
 
 @media (width >= 768px) {
-  .header .title-decor {
+  .header {
+    padding-inline-start: 0;
+  }
+
+  .header__theme-menu {
+    padding-inline-start: clamp(0.625rem, 0.029rem + 2.54vw, 1.25rem);
+  }
+
+  .header .description {
     justify-self: end;
     inline-size: clamp(22.75rem, -1.063rem + 49.61vw, 30.688rem);
   }
+
   .header_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-inline-start: -20px;
   }
 
   .section {
