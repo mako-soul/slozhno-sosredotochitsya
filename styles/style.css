@@ -132,7 +132,6 @@ button:disabled {
 }
 
 .header_title {
-  /*font-family: var(--main-font-family, monospace);*/
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
